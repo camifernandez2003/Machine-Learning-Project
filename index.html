@@ -3,104 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Concepto: Aprende una Letra en Lengua de Señas</title>
-    <style>
-      /* Estilos generales */
-      body {
-        background-color: #1e1e2f; /* Fondo oscuro */
-        color: #f4f4f9; /* Texto claro */
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      /* Contenedor principal */
-      .content-box {
-        background-color: #27293d; /* Fondo del cuadro */
-        padding: 25px;
-        width: 90%;
-        max-width: 700px;
-        border-radius: 15px;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-        text-align: left;
-      }
-
-      /* Estilos para el título */
-      h1 {
-        font-size: 2rem;
-        color: #ffd700; /* Amarillo dorado */
-        text-align: center;
-        margin-bottom: 15px;
-      }
-
-      /* Estilos para subtítulos */
-      h2 {
-        font-size: 1.25rem;
-        color: #82aaff; /* Azul claro */
-        margin: 15px 0 10px;
-      }
-
-      /* Estilos para el texto */
-      p {
-        line-height: 1.6;
-        margin-bottom: 15px;
-      }
-
-      /* Estilos para listas */
-      ul {
-        margin-left: 20px;
-      }
-
-      li {
-        margin-bottom: 10px;
-      }
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Machine Learning Project</title>
   </head>
   <body>
-    <div class="content-box">
-      <h1>Aprende una Letra en Lengua de Señas</h1>
-      <h2>Concepto</h2>
-      <p>
-        Una aplicación básica que muestra una letra del alfabeto en pantalla
-        junto con su representación en lengua de señas. El usuario coloca su
-        mano frente a la cámara, y la aplicación evalúa si la forma de su mano
-        coincide aproximadamente con el signo mostrado.
-      </p>
-      <h2>Técnicas involucradas</h2>
-      <ul>
-        <li>
-          <strong>ml5.js (Handpose):</strong> Para detectar la posición de los
-          dedos y la forma general de la mano.
-        </li>
-        <li><strong>P5.js:</strong> Para crear la interfaz gráfica.</li>
-      </ul>
-      <h2>Interacción</h2>
-      <ul>
-        <li>
-          La aplicación selecciona aleatoriamente una letra del alfabeto y
-          muestra su representación en lengua de señas.
-        </li>
-        <li>El usuario coloca su mano frente a la cámara.</li>
-        <li>
-          La aplicación compara la forma de la mano con el signo de la letra (de
-          manera básica, por ejemplo, verificando si algunos dedos están
-          extendidos o doblados).
-        </li>
-        <li>
-          Si la mano coincide aproximadamente con el signo, aparece un mensaje
-          de "¡Correcto!". Si no, permanece mostrando la misma letra hasta que
-          el usuario lo intente de nuevo.
-        </li>
-      </ul>
-      <h2>Objetivo</h2>
-      <p>
-        Ofrecer una experiencia educativa introductoria al lenguaje de señas,
-        utilizando una interacción lúdica y directa.
-      </p>
-    </div>
+    <script src="sketch.js"></script>
   </body>
 </html>
